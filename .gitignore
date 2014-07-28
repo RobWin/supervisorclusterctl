@@ -1,0 +1,7 @@
+build
+dist
+supervisorclusterctl.egg-info
+*.py[co]
+.project
+.pydevproject
+.settings
