@@ -31,7 +31,7 @@ setup(
     description=__programm_description__,
     long_description=README + '\n\n' +  CHANGES,
     author=__author__,
-    keywords = 'SPICA',
+    keywords = 'supervisor ansible',
     author_email='rbrtwnklr@gmail.com',
     url='https://github.com/RobWin/supervisorclusterctl.git',
     packages=find_packages(exclude=["docs", "test"]),
