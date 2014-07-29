@@ -11,7 +11,7 @@ except ImportError:
           "Please install it using your package manager (usually python-setuptools) or via pip (pip install setuptools)."
     sys.exit(1)
 
-requirements = []
+requirements = ['sphinx_rtd_theme']
 
 test_requirements = []
 

@@ -15,6 +15,7 @@ The primary goal of supervisorclusterctl is to simplify the use of Ansible and S
    :maxdepth: 2
 
    installation
+   user_guide
 
 Indices and tables
 ==================
