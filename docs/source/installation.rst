@@ -15,11 +15,15 @@ Currently Ansible can be run from any machine with Python 2.6 installed (Windows
 This includes Red Hat, Debian, CentOS, OS X, any of the BSDs, and so on.
 
 Ansible can be installed via "pip", the Python package manager.  If 'pip' isn't already available in
-your version of Python, you can get pip by::
+your version of Python, you can get pip by:
+
+.. code-block:: bash
 
    $ sudo easy_install pip
 
-Then install Ansible with::
+Then install Ansible with:
+
+.. code-block:: bash
 
    $ sudo pip install ansible
 
@@ -33,7 +37,9 @@ Managed Node Requirements
 `````````````````````````
 supervisorclusterctl requires `Supervisor <http://supervisord.org/>`_ to be installed on the remote nodes. 
 
-Supervisor can also be installed via "pip"
+Supervisor can also be installed via "pip":
+
+.. code-block:: bash
 
    $ sudo pip install supervisor
    
@@ -41,7 +47,7 @@ Supervisor can also be installed via "pip"
    Some Linux distributions offer a version of Supervisor that is installable through the system package manager.
    Use the package management tools of your distribution to check availability.
  
-.. _installing_supervisorclusterctl: 
+.. _installing_supervisorclusterctl:
  
 Installing supervisorclusterctl
 ````````````````````````````   
@@ -53,7 +59,7 @@ Installing from source
 
 supervisorclusterctl is trivially easy to install from source. No daemons or database setup are required.  
 
-To install from source.
+To install from source:
 
 .. code-block:: bash
 
@@ -66,6 +72,8 @@ To install from source.
 Create RPM package
 +++++++++++++++++++
 You can create a RPM package which can be used by many of popular Linux distributions, including Red Hat, SuSE:
+
+.. code-block:: bash
 
    $ sudo python setup.py bdist_rpm
       
