@@ -7,3 +7,8 @@ The tool uses Ansible and Supervisor's supervisorctl to control remote Superviso
 The primary goal of supervisorclusterctl is to simplify the use of Ansible and Supervisor's supervisorctl by focusing on the most commonly used supervisorctl actions.
 
 Read the documentation at http://supervisorclusterctl.readthedocs.org/
+
+The project is build and tested with Travis CI. Build status of master branch is:
+
+.. image:: https://travis-ci.org/RobWin/supervisorclusterctl.svg?branch=master
+    :target: https://travis-ci.org/RobWin/supervisorclusterctl
