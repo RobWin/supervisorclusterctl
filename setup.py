@@ -23,7 +23,7 @@ except:
     README = ''
     CHANGES = ''
 
-data_files = [('/etc/ansible', ['config/hosts'])]
+data_files = []
 
 setup(
     name=__programm_name__,
