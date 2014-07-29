@@ -36,7 +36,7 @@ supervisorclusterctl requires `Supervisor <http://supervisord.org/>`_ to be inst
 Supervisor can also be installed via "pip"
 
    $ sudo pip install supervisor
-
+   
 .. note::
    Some Linux distributions offer a version of Supervisor that is installable through the system package manager.
    Use the package management tools of your distribution to check availability.
@@ -68,3 +68,10 @@ Create RPM package
 You can create a RPM package which can be used by many of popular Linux distributions, including Red Hat, SuSE:
 
    $ sudo python setup.py bdist_rpm
+      
+.. _create_rpm:   
+   
+Installing from tarball or zipball
++++++++++++++++++++++++++++
+
+A zipball or tarball of the source are available on the `Project page <http://robwin.github.io/supervisorclusterctl/>`_.
