@@ -37,7 +37,7 @@ Managed Node Requirements
 `````````````````````````
 supervisorclusterctl requires `Supervisor <http://supervisord.org/>`_ to be installed on the remote nodes. 
 
-Supervisor can also be installed via "pip":
+Supervisor can be installed via "pip":
 
 .. code-block:: bash
 
@@ -51,6 +51,17 @@ Supervisor can also be installed via "pip":
  
 Installing supervisorclusterctl
 ````````````````````````````   
+
+.. _via_pip:
+
+Installing via pip
++++++++++++++++++++
+
+supervisorclusterctl can be installed via "pip":
+
+.. code-block:: bash
+
+   $ sudo pip install supervisorclusterctl
 
 .. _from_source:
 
