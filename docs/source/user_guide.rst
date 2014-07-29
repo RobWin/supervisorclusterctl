@@ -19,7 +19,7 @@ which you have your SSH key in ``authorized_keys``::
 
 This is an inventory file, which is  explained in greater detail in Ansible's documentation
 
-Now run a supervisorclusterctl command to get the status of all Supervisor managed processes on all of your configured production nodes:
+Now run the ``supervisorclusterctl <host-pattern> status`` command to get the status of all Supervisor managed processes on all of your configured production nodes:
   
 .. code-block:: bash
 
