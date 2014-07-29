@@ -87,4 +87,4 @@ def main(argv=None):
         return 2
 
 if __name__ == "__main__":
-    sys.exit(main(["spicadev", "-v", "-s", "start", "test"]))
+    sys.exit(main(["dev", "-v", "-s", "start", "test"]))

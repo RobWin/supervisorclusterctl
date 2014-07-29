@@ -11,7 +11,7 @@ except ImportError:
           "Please install it using your package manager (usually python-setuptools) or via pip (pip install setuptools)."
     sys.exit(1)
 
-requirements = ['sphinx_rtd_theme']
+requirements = []
 
 test_requirements = []
 
@@ -38,6 +38,7 @@ setup(
     install_requires=requirements,
     tests_require=test_requirements,
     data_files=data_files,
+    license='GPLv3',
     entry_points={
      'console_scripts': [
          'supervisorclusterctl = supervisorclusterctl.supervisorclusterctl:main'

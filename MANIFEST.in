@@ -1,2 +1,4 @@
-include README.rst
-include config/hosts
+include *.txt
+include *.rst
+recursive-include docs *
+recursive-exclude docs/build *
