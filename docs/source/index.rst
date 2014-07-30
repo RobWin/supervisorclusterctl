@@ -17,6 +17,9 @@ The tool only works with Python 2.6 or 2.7, since Ansible does not work with Pyt
 
    installation
    user_guide
+   contributing
+   authors
+   changes
 
 Indices and tables
 ==================

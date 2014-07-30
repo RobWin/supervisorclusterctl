@@ -18,7 +18,7 @@ test_requirements = []
 here = os.path.abspath(os.path.dirname(__file__))
 try:
     README = open(os.path.join(here, 'README.rst')).read()
-    CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
+    CHANGES = open(os.path.join(here, 'CHANGES.txt')).read().replace('.. :changelog:', '')
 except:
     README = ''
     CHANGES = ''
