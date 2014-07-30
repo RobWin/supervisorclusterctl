@@ -20,11 +20,3 @@ The tool only works with Python 2.6 or 2.7, since Ansible does not work with Pyt
    contributing
    authors
    changes
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

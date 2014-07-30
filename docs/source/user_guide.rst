@@ -4,45 +4,9 @@ User Guide
 .. contents:: Topics
 
 Running supervisorclusterctl
-```````````````````
+`````````````````````````````
 
 Now that you've installed supervisorclusterctl, it's time to get started with some basics.
-
-Edit /etc/ansible/hosts and put one or more remote systems in it, for
-which you have your SSH key in ``authorized_keys``::
-
-    [production]
-    192.168.0.11
-    192.168.0.12
-    [development]
-    192.168.0.10
-
-This is an inventory file, which is  explained in greater detail in Ansible's documentation
-
-Now run the ``supervisorclusterctl <host-pattern> status`` command to get the status of all Supervisor managed processes on all of your configured production nodes:
-  
-.. code-block:: bash
-
-   $ supervisorclusterctl production status
-	192.168.0.11 | success | rc=0 >>
-	managed_service		RUNNING    pid 12136, uptime 21:50:02
-	
-	192.168.0.12 | success | rc=0 >>
-	managed_service		RUNNING    pid 12261, uptime 21:50:02   
-	
-Now restart the ``managed_service`` process on all of your configured production nodes:
-  
-.. code-block:: bash
-
-   $ supervisorclusterctl production restart managed_service
-	192.168.0.11 | success | rc=0 >>
-	managed_service: stopped
-	managed_service: started
-	
-	192.168.0.12 | success | rc=0 >>
-	managed_service: stopped
-	managed_service: started
- 	
 
 Run help to see all available command-line commands, arguments and options 
 
@@ -92,3 +56,40 @@ Run subcommand help to see all available arguments and options of the subcommand
 	
 	optional arguments:
 	  -h, --help    show this help message and exit 
+
+Now edit /etc/ansible/hosts and put one or more remote systems in it, for
+which you have your SSH key in ``authorized_keys``::
+
+    [production]
+    192.168.0.11
+    192.168.0.12
+    [development]
+    192.168.0.10
+
+This is an inventory file, which is explained in greater detail in Ansible's documentation
+
+Run the ``supervisorclusterctl <host-pattern> status`` command to get the status of all Supervisor managed processes on all of your configured production nodes:
+  
+.. code-block:: bash
+
+   $ supervisorclusterctl production status
+	192.168.0.11 | success | rc=0 >>
+	managed_service		RUNNING    pid 12136, uptime 21:50:02
+	
+	192.168.0.12 | success | rc=0 >>
+	managed_service		RUNNING    pid 12261, uptime 21:50:02   
+	
+Now you are able to restart the ``managed_service`` process on all of your configured production nodes:
+  
+.. code-block:: bash
+
+   $ supervisorclusterctl production restart managed_service
+	192.168.0.11 | success | rc=0 >>
+	managed_service: stopped
+	managed_service: started
+	
+	192.168.0.12 | success | rc=0 >>
+	managed_service: stopped
+	managed_service: started
+ 	
+
