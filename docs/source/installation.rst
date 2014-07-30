@@ -50,7 +50,7 @@ Supervisor can be installed via "pip":
 .. _installing_supervisorclusterctl:
  
 Installing supervisorclusterctl
-````````````````````````````   
+````````````````````````````````   
 
 .. _via_pip:
 
@@ -66,7 +66,7 @@ supervisorclusterctl can be installed via "pip":
 .. _from_source:
 
 Installing from source
-+++++++++++++++++++
++++++++++++++++++++++++
 
 supervisorclusterctl is trivially easy to install from source. No daemons or database setup are required.  
 
@@ -88,9 +88,9 @@ You can create a RPM package which can be used by many of popular Linux distribu
 
    $ sudo python setup.py bdist_rpm
       
-.. _create_rpm:   
+.. _install_from_tarball_zipball:   
    
 Installing from tarball or zipball
-+++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
 
 A zipball or tarball of the source are available on the `Project page <http://robwin.github.io/supervisorclusterctl/>`_.
