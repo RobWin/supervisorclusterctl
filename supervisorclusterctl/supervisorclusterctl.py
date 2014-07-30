@@ -3,8 +3,6 @@ from argparse import ArgumentParser
 from subprocess import call
 import sys
 
-DEBUG = 1
-
 class CLIError(Exception):
     """Generic exception to raise and log different fatal errors."""
     def __init__(self, msg):
@@ -70,21 +68,14 @@ def main(argv=None):
             print("Verbose mode on: " + verbose_level)
             print "Parsed arguments:"
             print args   
-            call([ansible_executable, host_pattern, verbose_level, ansible_action_option, supervisorctl_command,])
+            retcode = call([ansible_executable, host_pattern, verbose_level, ansible_action_option, supervisorctl_command,])
         else:
-            call([ansible_executable, host_pattern, ansible_action_option, supervisorctl_command])
+            retcode = call([ansible_executable, host_pattern, ansible_action_option, supervisorctl_command])
         
-        return 0
+        return retcode
     except KeyboardInterrupt:
         ### handle keyboard interrupt ###
         return 0
-    except Exception, e:
-        if DEBUG:
-            raise(e)
-        indent = len(program_name) * " "
-        sys.stderr.write(program_name + ": " + repr(e) + "\n")
-        sys.stderr.write(indent + "  for help use --help")
-        return 2
 
 if __name__ == "__main__":
-    sys.exit(main(["dev", "-v", "-s", "start", "test"]))
+    sys.exit(main(["-h"]))

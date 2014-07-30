@@ -37,6 +37,7 @@ setup(
     packages=find_packages(exclude=["docs", "test"]),
     install_requires=requirements,
     tests_require=test_requirements,
+    test_suite="test",
     data_files=data_files,
     license='GPLv3',
     entry_points={
