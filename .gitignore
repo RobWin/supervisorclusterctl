@@ -1,7 +1,9 @@
 build
 dist
-supervisorclusterctl.egg-info
+*.egg-info
 *.py[co]
 .project
 .pydevproject
 .settings
+.idea
+*.iml
