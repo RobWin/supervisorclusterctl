@@ -7,7 +7,7 @@ Changes
 0.1.2
 -------------------------------
 
-- Fixued issue #1: reload not working
+- Fixed issue #1: reload not working
 
 0.1.1
 -------------------------------
