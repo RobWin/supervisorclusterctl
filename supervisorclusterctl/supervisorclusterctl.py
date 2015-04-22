@@ -59,7 +59,7 @@ def main(argv=None):
         else:
             supervisorctl_command = supervisorctl_executable + " " + supervisorctl_action
           
-        if (supervisorctl_action not in ['status', 'reread', 'update', 'reload']):
+        if supervisorctl_action not in ['status', 'reread', 'update', 'reload']:
             supervisorctl_argument = getattr(args, "process-name")
             supervisorctl_command = supervisorctl_command + ' ' + supervisorctl_argument
             

@@ -27,3 +27,8 @@ class TestSupervisorclusterctl(unittest.TestCase):
         with self.assertRaises(SystemExit) as exception:
             supervisorclusterctl.main(["dev", "remove"])            
         self.assertEqual(exception.exception.code, 2)
+
+    def testRestartWithoutProcessName(self):
+        with self.assertRaises(SystemExit) as exception:
+            supervisorclusterctl.main(["dev", "restart"])
+        self.assertEqual(exception.exception.code, 2)
